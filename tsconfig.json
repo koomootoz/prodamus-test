@@ -15,6 +15,9 @@
   "exclude": [
     "node_modules",
     "lib",
-    "*/*.scss"
+    "*/*.scss",
+    "typings/main",
+    "typings/main.d.ts",
+    "typings/index.d.ts"
   ]
 }
