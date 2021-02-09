@@ -1,0 +1,22 @@
+@import '~antd/dist/antd.css';
+@import '~swiper/swiper-bundle.css';
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+  color: #202124;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}

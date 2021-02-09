@@ -1,0 +1,25 @@
+.blockTypeVideoContainer {
+  width: 100%;
+  max-width: 560px;
+  padding-top: 12px;
+
+  .blockTypeVideoSplash {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 315px;
+    background-color: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+  }
+
+  .blockTypeVideoInput {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    & > :last-child {
+      flex: 0 0 32px;
+      margin-left: -1px;
+    }
+  }
+}

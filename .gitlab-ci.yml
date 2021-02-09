@@ -1,0 +1,10 @@
+image: node:8
+stages:
+    - build_master
+
+build_master:
+    stage: build_master
+    only:
+        - master
+    script:
+        - sshpass ssh -t admin@84.201.139.43 "cd web/ui.demo.prodamus.ru/public_html && git checkout -f && git pull git@gitlab.dev-gns.com:prodamus/ui-kit.git && npm install && npm run build"

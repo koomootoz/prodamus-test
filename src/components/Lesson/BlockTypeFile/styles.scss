@@ -1,0 +1,24 @@
+.blockTypeFileContainer {
+  width: 100%;
+  max-width: 560px;
+  display: flex;
+  align-items: center;
+
+  & > .blockTypeFileInputs {
+    flex: 1;
+  }
+
+  & > .blockTypeFileIcon {
+    flex: 0 0 64px;
+    margin-right: 12px;
+  }
+
+  & > .blockTypeFileButton {
+    margin-left: 12px;
+    flex: 0 0 164px;
+  }
+
+  .blockTypeFileInput {
+    display: none;
+  }
+}

@@ -1,0 +1,11 @@
+.block {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  &:first-child {
+    padding-top: 32px;
+  }
+  &:last-child {
+    padding-bottom: 32px;
+  }
+}

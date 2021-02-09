@@ -1,0 +1,15 @@
+.blockTypeAudioContainer {
+  width: 100%;
+  max-width: 560px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .blockTypeAudioInput {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    width: 560px;
+  }
+}
