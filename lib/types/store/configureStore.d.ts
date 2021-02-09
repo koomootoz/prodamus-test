@@ -1,0 +1,3 @@
+export declare const configureStore: ((initialState?: import("../reducers/types").AppState | undefined) => import("redux").Store<import("../reducers/types").AppState, import("redux").AnyAction>) | ((initialState?: import("../reducers/types").AppState | undefined) => import("../reducers/types").Store);
+export declare const history: import("history").History<unknown>;
+//# sourceMappingURL=configureStore.d.ts.map
