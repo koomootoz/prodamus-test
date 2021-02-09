@@ -7,9 +7,10 @@ const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const nodeExternals = require('webpack-node-externals');
 const pkg = require('./package.json');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.ts',
+  entry: './src/index.tsx',
   output: {
     path: path.resolve(__dirname, 'lib'),
     filename: 'index.js',
@@ -153,6 +154,9 @@ module.exports = {
     minimizer: [new OptimizeCSSAssetsPlugin({})]
   },
   plugins: [
+    new HtmlWebpackPlugin({
+      template: './public/index.html'
+    }),
     new MiniCssExtractPlugin({
       filename: '[name].css'
     }),
